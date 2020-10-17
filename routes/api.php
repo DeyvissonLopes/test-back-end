@@ -38,7 +38,7 @@ Route::group(['middleware' => ['apiJwt'], 'prefix' => 'products'], function() {
     Route::get('/', [ProductController::class, 'index']);
     Route::get('/show/{product}', [ProductController::class, 'show']);
     Route::post('/store', [ProductController::class, 'store']);
-    Route::put('/update/{product}', [ProductController::class, 'update']);
+    Route::post('/update/{product}', [ProductController::class, 'update']);
     Route::delete('/delete/{product}', [ProductController::class, 'destroy']);
 
 });
