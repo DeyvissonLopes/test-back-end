@@ -8,7 +8,7 @@ CRUD de produtos.
 
 Toda a documentação pode ser acessada publicamente no link abaixo.
 
-<a href="https://documenter.getpostman.com/view/10068660/TVRrVjXE">Clique aqui</a>
+<a href="https://documenter.getpostman.com/view/10068660/TVRrVjXE" target="_blank">Clique aqui</a>
 
 ## O que deve ser executado antes de acessar as rotas?
 
@@ -17,15 +17,16 @@ Toda a documentação pode ser acessada publicamente no link abaixo.
 Vá até a pasta aonde deseja armazenar o projeto, abra um terminal com o caminho desta pasta e 
 digite a seguinte linha de comando.
 
-Atenção: Usuários de Windowns devem abrir o PowerShell para executar esta etapa.
-
-Outra oção é baixar o git e abrir um terminal "git bash" na raiz da pasta desejada.
-
-para saber como baixar o git acesse o seguinte link -> [Git Download](https://git-scm.com/downloads)
-
 ```
 git clone https://github.com/DeyvissonLopes/test-back-end.git
 ```
+
+Atenção: Usuários de Windowns devem abrir o PowerShell para executar esta etapa.
+
+Outra opção é baixar o git e abrir um terminal "git bash" na raiz da pasta desejada.
+
+Para saber como baixar o git acesse o seguinte link -> <a href="https://git-scm.com/downloads" target="_blank">Git Download</a>
+
 
 ### Instalando dependências
 
@@ -41,7 +42,7 @@ Precisamos criar a pasta onde serão definidas nossas variáveis de ambiente.
 ###### Atenção! É aqui que você descreverá as variáveis de ambientes que fazem a conexão com o banco de dados, não se esqueça desse detalhe. Certifique-se que existe um banco de dados que possua as caracteristicas informadas no arquivo :)
 
 ```
-composer install
+cp ./.env.example .env
 ```
 
 ### Gerando a chave de comunicação do banco de dados com o laravel
@@ -76,9 +77,10 @@ Por fim, criamos as tabelas do nosso banco de dados e as populamos.
 php artisan migrate --seed
 ```
 
-###### Tudo certo!
+##### Tudo certo!
 Agora sua aplicação deve funcionar normalmente :)
 
+## Contato
 Toda e qualquer sugestão, bem como contatos podem ser feitos através do seguinte endereço de E-mail.
 
 deyvissonlopes@outlook.com
